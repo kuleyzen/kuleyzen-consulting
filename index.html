@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,6 +16,14 @@
       color: white;
       padding: 1rem;
       text-align: center;
+      position: relative;
+    }
+    header img.logo {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      max-width: 120px;
+      height: auto;
     }
     nav {
       background: #f4f4f4;
@@ -54,10 +61,22 @@
       padding: 1rem;
       margin-top: 3rem;
     }
+    @media (max-width: 600px) {
+      .profile {
+        flex-direction: column;
+        align-items: center;
+      }
+      header img.logo {
+        top: 10px;
+        right: 10px;
+        max-width: 80px;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
+    <img src="logo.png" alt="Kuleyzen Logo" class="logo">
     <h1>Kuleyzen Consulting</h1>
     <p>Project Management & Outsourcing – rooted in local values, driven by global standards</p>
   </header>
@@ -73,9 +92,7 @@
     <div class="profile">
       <img src="eris.jpg" alt="Eriş Çelikel">
       <div>
-        <strong>Eriş Çelikel</strong><br>
-        As an agricultural engineer with a focus on plant protection, Eriş combines technical know-how with calm and clarity. His background in communication adds empathy and structure to his project approach. Whether managing aviation projects or olive harvests, he believes in practical solutions, teamwork, and clean execution – with a human touch.<br>
-        Languages: Turkish, German, English
+        <strong>Eriş Çelikel</strong><br>As an agricultural engineer with a focus on plant protection, Eriş combines technical know-how with calm and clarity. His background in communication adds empathy and structure to his project approach. Whether managing aviation projects or olive harvests, he believes in practical solutions, teamwork, and clean execution – with a human touch.<br>Languages: Turkish, German, English
       </div>
     </div>
     <div class="profile">
@@ -91,10 +108,10 @@
   <section id="services">
     <h2>Our Services</h2>
     <ul>
-      <li>🎯 Project management (PRINCE2-based)</li>
+      <li>🌟 Project management (PRINCE2-based)</li>
       <li>🔍 Process analysis & organizational structuring</li>
       <li>🤝 Outsourcing strategy & advisory</li>
-      <li>🧩 Interim leadership & remote support</li>
+      <li>🧹 Interim leadership & remote support</li>
       <li>📚 Coaching, training, and mentoring</li>
       <li>🌍 Multilingual, international collaboration</li>
     </ul>
